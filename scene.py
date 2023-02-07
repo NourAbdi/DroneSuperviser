@@ -4,18 +4,18 @@ from camera import *
 from projection import *
 import pygame as pg
 
-delay = 10000
 k = 1000
 
 
 # This is the main class where we can render our scene contains drones and targets and control the camera
 class SoftwareRender:
-    def __init__(self, drones, drones_num, frames_num):
+    def __init__(self, drones, drones_num, frames_num, delay):
         self.frame_count = 0
         self.count = 0
         self.drones = drones
         self.drones_num = drones_num
         self.frames_num = frames_num
+        self.delay = delay
         self.frame = 1
         self.world_axes = Axes
         self.obj_arrow = Arrow
@@ -141,12 +141,12 @@ class SoftwareRender:
 
             pg.display.set_caption(
                 'frame :' + str(self.frame) + ' ,time : ' + str(
-                    pg.time.get_ticks() - self.count * k + self.frame_count * delay))
+                    pg.time.get_ticks() - self.count * k + self.frame_count * self.delay))
             pg.display.flip()
             # self.clock.tick(self.FPS)
             self.slice_pics()
 
-            if pg.time.get_ticks() - self.count * k + self.frame_count * delay > delay * self.frame:
+            if pg.time.get_ticks() - self.count * k + self.frame_count * self.delay > self.delay * self.frame:
                 self.frame += 1
                 self.IMGFlag = False
                 self.replace_drones()
