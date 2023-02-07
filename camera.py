@@ -2,6 +2,7 @@ import pygame as pg
 from matrix_functions import *
 
 
+# Camera is the object where you can see the rest objects in the scene in 3D (drones and targets)
 class Camera:
     def __init__(self, render, position):
         self.render = render
@@ -13,8 +14,8 @@ class Camera:
         self.v_fov = self.h_fov * (render.HEIGHT / render.WIDTH)
         self.near_plane = 0.1
         self.far_plane = 100
-        self.moving_speed = 1
-        self.rotation_speed = 0.02
+        self.moving_speed = 0.5
+        self.rotation_speed = 0.01
 
         self.anglePitch = 0
         self.angleYaw = 0

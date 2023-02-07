@@ -8,6 +8,7 @@ N = 1
 Frame = 100
 
 
+# This func will get the Input (drones statuses and videoCaps) from the destination file and send to the scene to render
 def get_drones_from_file(filename, drone_name, translations, alpha, videoCaps):
     coordinates = (100, 100)
     font = cv2.FONT_HERSHEY_SIMPLEX
@@ -24,8 +25,7 @@ def get_drones_from_file(filename, drone_name, translations, alpha, videoCaps):
                 line = line.replace(']', '')
                 translations.append([float(i) for i in line.split(", ")[0:3]])
                 alpha.append([float(i) for i in line.split(", ")[3:4]][0])
-                # rotations_ = line.split()[1:]
-                # rotations.append([int(rotation_.split('/')[0]) for rotation_ in rotations_])
+    # Reading the frame Images (VideoCaps) for each drone
     # for i in range(Frame):
     #     img = cv2.imread(filename + drone_name + '/video_cap/' + str(i + 1) + '.jpg')
     #     img = cv2.putText(img, drone_name + ' ,Frame ' + str(i+1), coordinates, font, fontScale, color, thickness,
@@ -36,6 +36,7 @@ def get_drones_from_file(filename, drone_name, translations, alpha, videoCaps):
 if __name__ == '__main__':
 
     drones = []
+    # For each drone we will read the status file containing the translations and the rotations per frame
     for i in range(N):
         drone_name = 'drone_name' + str(i + 1)
         translations, alpha, videoCaps = [], [], []

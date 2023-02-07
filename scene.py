@@ -7,9 +7,10 @@ import pygame as pg
 delay = 10000
 num_frame = 100
 N = 1
-k = 50
+k = 1000
 
 
+# This is the main class where we can render our scene contains drones and targets and control the camera
 class SoftwareRender:
     def __init__(self, drones):
         self.frame_count = 0
@@ -31,8 +32,9 @@ class SoftwareRender:
         self.clock = pg.time.Clock()
         self.create_objects()
 
+    # here we get the shape of the scene objects meshes and translate them by correct frame
     def get_objects(self, is_next, drone_color, arrow_color):
-        if is_next:
+        if is_next:  # for the current frame , crating the objects
             for drone in self.drones:
                 self.obj_arrow = Arrow(self)
                 self.obj_arrow.take_position(drone.alpha[self.frame])
@@ -45,13 +47,11 @@ class SoftwareRender:
                 self.obj.draw_color = True
                 self.obj.color = pg.Color(drone_color)
                 self.obj.draw_name = True
-                # self.obj.draw_normals = False
-                # self.obj.normal = (0, drone.alpha[self.frame], 0)
                 self.obj.translate(drone.position[self.frame])
                 # self.obj.rotate_y(drone.alpha[self.frame])
                 self.objects.append(self.obj)
-                self.objects.append(self.obj_arrow)
-        else:
+                # self.objects.append(self.obj_arrow)
+        else:  # for the next frame , crating the objects in another transparent color
             for drone in self.drones:
                 self.obj_arrow = Arrow(self)
                 self.obj_arrow.take_position(drone.alpha[self.frame - 1])
@@ -64,14 +64,12 @@ class SoftwareRender:
                 self.obj.draw_color = True
                 self.obj.color = pg.Color('blue')
                 self.obj.draw_name = True
-                # self.obj.draw_normals = False
-                # self.obj.normal = (0, drone.alpha[self.frame-1], 0)
                 self.obj.translate(drone.position[self.frame - 1])
                 # self.obj.rotate_y(drone.alpha[self.frame - 1])
                 self.objects.append(self.obj)
-                self.objects.append(self.obj_arrow)
+                # self.objects.append(self.obj_arrow)
 
-    def create_objects(self):
+    def create_objects(self):  # creating objects for 2 frames if possible, current and next
         self.camera = Camera(self, [-100, 100, -100])
         self.projection = Projection(self)
         self.world_axes = Axes(self)
@@ -81,6 +79,7 @@ class SoftwareRender:
         if num_frame - self.frame > 1:
             self.get_objects(True, 'orange', 'green')
 
+# Reading the shape of the drones from obj file
     def get_object_from_file(self, filename):
         vertex, faces = [], []
         with open(filename) as f:
@@ -92,19 +91,19 @@ class SoftwareRender:
                     faces.append([int(face_.split('/')[0]) - 1 for face_ in faces_])
         return Object3D(self, vertex, faces)
 
-    def draw(self):
+    def draw(self):  # Drawing the scene Objects
         self.screen.fill(pg.Color('darkslategray'))
         self.world_axes.draw()
         for obj in self.objects:
             obj.draw()
 
-    def replace_drones(self):
+    def replace_drones(self):  # for each frame removing and adding the correct objects according to the frame
         self.objects.clear()
         self.get_objects(False, 'red', 'blue')
         if num_frame - self.frame > 1:
             self.get_objects(True, 'orange', 'green')
 
-    def slice_pics(self):
+    def slice_pics(self):  # slice the pictures window into 1,2,3,4 pieces according to how many drones we have
         imgs = []
         img = None
         cv2.namedWindow("imgs", cv2.WINDOW_NORMAL)
@@ -128,6 +127,9 @@ class SoftwareRender:
         if imgs:
             cv2.imshow('imgs', img)
 
+# This is the main func of this class , once run is running ,it will render the scene and the objects it has
+# the camera has its own control : keys to use : a,s,d,w,q,e for the position the camera looking at ,arrows for movement
+# the keys j,k,l is for jumping next previous and wait frames and time elapsed
     def run(self):
 
         while True:
@@ -151,6 +153,7 @@ class SoftwareRender:
             if self.frame > num_frame:
                 break
 
+# this func helps to read 3 keys j,k,l and jumping between frames
     def control_frame(self):
         key = pg.key.get_pressed()
         if key[pg.K_j]:
@@ -164,7 +167,6 @@ class SoftwareRender:
             # pg.time.wait(k)
             pg.time.delay(k)
             # self.clock.tick(2000)
-            # timer_active = False
         if key[pg.K_l]:
             if self.frame < num_frame:
                 self.frame += 1

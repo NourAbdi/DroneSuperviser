@@ -2,6 +2,8 @@ import math
 import numpy as np
 
 
+# This class used mathematically matrices for calculating the 3d objs positioning and translations
+
 def translate(pos):
     tx, ty, tz = pos
     return np.array([

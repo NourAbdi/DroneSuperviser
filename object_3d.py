@@ -2,6 +2,8 @@ import pygame as pg
 from matrix_functions import *
 
 
+# This class is responsible for the objects in 3d scene ,
+# containing mesh of vertices and faces and has options to have name ,self axes ,vertices and color
 class Object3D:
     def __init__(self, render, vertices='', faces=''):
         self.render = render
