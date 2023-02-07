@@ -5,17 +5,17 @@ from projection import *
 import pygame as pg
 
 delay = 10000
-num_frame = 100
-N = 1
 k = 1000
 
 
 # This is the main class where we can render our scene contains drones and targets and control the camera
 class SoftwareRender:
-    def __init__(self, drones):
+    def __init__(self, drones, drones_num, frames_num):
         self.frame_count = 0
         self.count = 0
         self.drones = drones
+        self.drones_num = drones_num
+        self.frames_num = frames_num
         self.frame = 1
         self.world_axes = Axes
         self.obj_arrow = Arrow
@@ -76,10 +76,10 @@ class SoftwareRender:
         self.world_axes.scale(100)
 
         self.get_objects(False, 'red', 'blue')
-        if num_frame - self.frame > 1:
+        if self.frames_num - self.frame > 1:
             self.get_objects(True, 'orange', 'green')
 
-# Reading the shape of the drones from obj file
+    # Reading the shape of the drones from obj file
     def get_object_from_file(self, filename):
         vertex, faces = [], []
         with open(filename) as f:
@@ -100,7 +100,7 @@ class SoftwareRender:
     def replace_drones(self):  # for each frame removing and adding the correct objects according to the frame
         self.objects.clear()
         self.get_objects(False, 'red', 'blue')
-        if num_frame - self.frame > 1:
+        if self.frames_num - self.frame > 1:
             self.get_objects(True, 'orange', 'green')
 
     def slice_pics(self):  # slice the pictures window into 1,2,3,4 pieces according to how many drones we have
@@ -114,22 +114,22 @@ class SoftwareRender:
                     imgs.append(drone.videoCaps[self.frame - 1])
                 except:
                     return
-            if N == 1:
+            if self.drones_num == 1:
                 img = imgs[0]
-            elif N == 2:
+            elif self.drones_num == 2:
                 img = np.concatenate((imgs[0], imgs[1]), axis=0)
-            elif N == 3:
+            elif self.drones_num == 3:
                 img = np.concatenate((imgs[0], imgs[1], imgs[2]), axis=0)
-            elif N == 4:
+            elif self.drones_num == 4:
                 img = np.concatenate(((np.concatenate((imgs[0], imgs[1]), axis=1)),
                                       (np.concatenate((imgs[2], imgs[3]), axis=1))), axis=0)
             self.IMGFlag = True
         if imgs:
             cv2.imshow('imgs', img)
 
-# This is the main func of this class , once run is running ,it will render the scene and the objects it has
-# the camera has its own control : keys to use : a,s,d,w,q,e for the position the camera looking at ,arrows for movement
-# the keys j,k,l is for jumping next previous and wait frames and time elapsed
+    # This is the main func of this class , once run is running ,it will render the scene and the objects it has
+    # the camera has its own control : keys to use : a,s,d,w,q,e for the position the camera looking at ,arrows for movement
+    # the keys j,k,l is for jumping next previous and wait frames and time elapsed
     def run(self):
 
         while True:
@@ -150,10 +150,10 @@ class SoftwareRender:
                 self.frame += 1
                 self.IMGFlag = False
                 self.replace_drones()
-            if self.frame > num_frame:
+            if self.frame > self.frames_num:
                 break
 
-# this func helps to read 3 keys j,k,l and jumping between frames
+    # this func helps to read 3 keys j,k,l and jumping between frames
     def control_frame(self):
         key = pg.key.get_pressed()
         if key[pg.K_j]:
@@ -168,7 +168,7 @@ class SoftwareRender:
             pg.time.delay(k)
             # self.clock.tick(2000)
         if key[pg.K_l]:
-            if self.frame < num_frame:
+            if self.frame < self.frames_num:
                 self.frame += 1
                 self.frame_count += 1
                 self.IMGFlag = False
