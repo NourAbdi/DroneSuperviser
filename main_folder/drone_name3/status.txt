@@ -1,0 +1,244 @@
+img num: 0 rightLeft, upDown, forwardBack, yaw:
+[40.5901, 40.1985, 221.526, -1]
+img num: 1 rightLeft, upDown, forwardBack, yaw:
+[40.42923, 40.4188, 200.547, -2]
+img num: 2 rightLeft, upDown, forwardBack, yaw:
+[40.42923, 40.4188, 180.547, -2]
+img num: 3 rightLeft, upDown, forwardBack, yaw:
+[40.9686, 40.3475, 160.756, -8]
+img num: 4 rightLeft, upDown, forwardBack, yaw:
+[40.1959, 40.7701, 140.235, 1]
+img num: 5 rightLeft, upDown, forwardBack, yaw:
+[-29.9285, -9.26478, 220.248, -12]
+img num: 6 rightLeft, upDown, forwardBack, yaw:
+[-21.5786, -16.7173, 223.795, -10]
+img num: 7 rightLeft, upDown, forwardBack, yaw:
+[-21.5569, -16.5438, 223.847, -10]
+img num: 8 rightLeft, upDown, forwardBack, yaw:
+[-24.951, -35.2067, 224.458, -10]
+img num: 9 rightLeft, upDown, forwardBack, yaw:
+[13.2477, -30.7048, 227.19, -1]
+img num: 10 rightLeft, upDown, forwardBack, yaw:
+[24.6405, 41.268, 223.014, 1]
+img num: 11 rightLeft, upDown, forwardBack, yaw:
+[-26.9841, -34.3271, 221.596, -10]
+img num: 12 rightLeft, upDown, forwardBack, yaw:
+[20.5774, 18.9053, 223.87, 1]
+img num: 13 rightLeft, upDown, forwardBack, yaw:
+[8.22728, 47.4138, 215.46, 0]
+img num: 14 rightLeft, upDown, forwardBack, yaw:
+[21.461, 18.9438, 217.675, 2]
+img num: 15 rightLeft, upDown, forwardBack, yaw:
+[-30.6823, -18.1894, 210.433, -11]
+img num: 16 rightLeft, upDown, forwardBack, yaw:
+[-4.53884, 52.1716, 203.487, -4]
+img num: 17 rightLeft, upDown, forwardBack, yaw:
+[47.5308, 4.6413, 199.027, 9]
+img num: 18 rightLeft, upDown, forwardBack, yaw:
+[-42.0456, -14.7416, 194.277, -16]
+img num: 19 rightLeft, upDown, forwardBack, yaw:
+[-9.50118, 31.9296, 195.424, -7]
+img num: 20 rightLeft, upDown, forwardBack, yaw:
+[-17.2521, -28.7976, 191.215, -9]
+img num: 21 rightLeft, upDown, forwardBack, yaw:
+[-24.2709, -49.2813, 174.829, -11]
+img num: 22 rightLeft, upDown, forwardBack, yaw:
+[-15.3391, -29.5131, 179.154, -7]
+img num: 23 rightLeft, upDown, forwardBack, yaw:
+[-16.2076, -15.8709, 177.022, -7]
+img num: 24 rightLeft, upDown, forwardBack, yaw:
+[36.8493, 20.041, 168.047, 10]
+img num: 25 rightLeft, upDown, forwardBack, yaw:
+[-24.9952, -19.6808, 167.521, -8]
+img num: 26 rightLeft, upDown, forwardBack, yaw:
+[-25.947, -30.2549, 159.491, -8]
+img num: 27 rightLeft, upDown, forwardBack, yaw:
+[40.6576, 17.2715, 153.193, 15]
+img num: 28 rightLeft, upDown, forwardBack, yaw:
+[-25.5887, -20.2496, 153.865, -7]
+img num: 29 rightLeft, upDown, forwardBack, yaw:
+[22.9214, 12.6433, 149.481, 10]
+img num: 30 rightLeft, upDown, forwardBack, yaw:
+[-31.9408, -15.94, 143.114, -10]
+img num: 31 rightLeft, upDown, forwardBack, yaw:
+[28.5393, 18.9309, 138.059, 13]
+img num: 32 rightLeft, upDown, forwardBack, yaw:
+[20.5758, 19.8544, 135.197, 10]
+img num: 33 rightLeft, upDown, forwardBack, yaw:
+[-20.4732, -19.6261, 131.335, -5]
+img num: 34 rightLeft, upDown, forwardBack, yaw:
+[35.791, 22.4108, 119.823, 19]
+img num: 35 rightLeft, upDown, forwardBack, yaw:
+[31.0809, 19.5372, 118.47, 18]
+img num: 36 rightLeft, upDown, forwardBack, yaw:
+[-25.3594, -22.4545, 117.06, -6]
+img num: 37 rightLeft, upDown, forwardBack, yaw:
+[-30.9707, -17.53, 112.092, -8]
+img num: 38 rightLeft, upDown, forwardBack, yaw:
+[-30.962, -23.4044, 109.149, -7]
+img num: 39 rightLeft, upDown, forwardBack, yaw:
+[-32.8265, -25.273, 101.915, -7]
+img num: 40 rightLeft, upDown, forwardBack, yaw:
+[-37.951, -21.012, 97.9087, -8]
+img num: 41 rightLeft, upDown, forwardBack, yaw:
+[-41.0433, -21.698, 93.6365, -9]
+img num: 42 rightLeft, upDown, forwardBack, yaw:
+[-38.6506, -21.515, 89.9438, -8]
+img num: 43 rightLeft, upDown, forwardBack, yaw:
+[-38.2212, -19.656, 87.1055, -8]
+img num: 44 rightLeft, upDown, forwardBack, yaw:
+[-37.8761, -18.207, 84.0755, -8]
+img num: 45 rightLeft, upDown, forwardBack, yaw:
+[-35.8672, -17.279, 81.4825, -8]
+img num: 46 rightLeft, upDown, forwardBack, yaw:
+[-34.3599, -16.9735, 78.7945, -9]
+img num: 47 rightLeft, upDown, forwardBack, yaw:
+[-30.2895, -16.8664, 75.9632, -9]
+img num: 48 rightLeft, upDown, forwardBack, yaw:
+[-24.1625, -16.2836, 76.7304, -6]
+img num: 49 rightLeft, upDown, forwardBack, yaw:
+[-20.3868, -16.396, 75.8046, -6]
+img num: 50 rightLeft, upDown, forwardBack, yaw:
+[-20.2114, -14.0184, 74.1746, -8]
+img num: 51 rightLeft, upDown, forwardBack, yaw:
+[-14.5181, -15.3797, 73.603, -6]
+img num: 52 rightLeft, upDown, forwardBack, yaw:
+[-13.503, -14.6961, 73.3872, -8]
+img num: 53 rightLeft, upDown, forwardBack, yaw:
+[-9.50401, -13.471, 74.2483, -7]
+img num: 54 rightLeft, upDown, forwardBack, yaw:
+[-6.71473, -14.974, 74.1106, -8]
+img num: 55 rightLeft, upDown, forwardBack, yaw:
+[-3.09861, -15.1389, 74.6584, -7]
+img num: 56 rightLeft, upDown, forwardBack, yaw:
+[-0.888556, -14.648, 75.7306, -8]
+img num: 57 rightLeft, upDown, forwardBack, yaw:
+[3.07936, -16.2427, 76.0184, -7]
+img num: 58 rightLeft, upDown, forwardBack, yaw:
+[3.86594, -15.7496, 76.6783, -8]
+img num: 59 rightLeft, upDown, forwardBack, yaw:
+[4.59079, -18.0535, 76.2888, -9]
+img num: 60 rightLeft, upDown, forwardBack, yaw:
+[8.99475, -15.5933, 77.1859, -7]
+img num: 61 rightLeft, upDown, forwardBack, yaw:
+[8.71452, -17.4909, 76.8217, -8]
+img num: 62 rightLeft, upDown, forwardBack, yaw:
+[8.38085, -15.6335, 77.9799, -9]
+img num: 63 rightLeft, upDown, forwardBack, yaw:
+[9.7805, -17.1537, 77.3451, -9]
+img num: 64 rightLeft, upDown, forwardBack, yaw:
+[9.54727, -18.1712, 77.1874, -9]
+img num: 65 rightLeft, upDown, forwardBack, yaw:
+[11.6498, -14.2593, 78.1365, -8]
+img num: 66 rightLeft, upDown, forwardBack, yaw:
+[9.22969, -17.3903, 77.2817, -10]
+img num: 67 rightLeft, upDown, forwardBack, yaw:
+[8.13012, -14.1038, 78.1639, -10]
+img num: 68 rightLeft, upDown, forwardBack, yaw:
+[7.47344, -16.155, 77.4957, -9]
+img num: 69 rightLeft, upDown, forwardBack, yaw:
+[4.19624, -15.6902, 78.0511, -10]
+img num: 70 rightLeft, upDown, forwardBack, yaw:
+[2.24183, -15.0454, 78.2371, -9]
+img num: 71 rightLeft, upDown, forwardBack, yaw:
+[-0.406459, -10.2355, 78.8814, -8]
+img num: 72 rightLeft, upDown, forwardBack, yaw:
+[-5.67554, -11.3063, 77.7694, -9]
+img num: 73 rightLeft, upDown, forwardBack, yaw:
+[-9.0729, -13.3915, 76.3026, -9]
+img num: 74 rightLeft, upDown, forwardBack, yaw:
+[-8.39136, -13.6861, 75.6371, -5]
+img num: 75 rightLeft, upDown, forwardBack, yaw:
+[-13.3174, -11.1342, 75.483, -7]
+img num: 76 rightLeft, upDown, forwardBack, yaw:
+[-16.5413, -11.208, 74.047, -8]
+img num: 77 rightLeft, upDown, forwardBack, yaw:
+[-19.8149, -10.7046, 72.3837, -9]
+img num: 78 rightLeft, upDown, forwardBack, yaw:
+[-17.5271, -11.5523, 73.008, -7]
+img num: 79 rightLeft, upDown, forwardBack, yaw:
+[-17.2603, -12.5883, 72.0895, -6]
+img num: 80 rightLeft, upDown, forwardBack, yaw:
+[-17.9252, -11.7402, 71.366, -7]
+img num: 81 rightLeft, upDown, forwardBack, yaw:
+[-15.3993, -10.745, 71.7963, -5]
+img num: 82 rightLeft, upDown, forwardBack, yaw:
+[-17.2175, -10.804, 70.0765, -8]
+img num: 83 rightLeft, upDown, forwardBack, yaw:
+[-16.1482, -12.9943, 69.042, -7]
+img num: 84 rightLeft, upDown, forwardBack, yaw:
+[-13.4448, -11.3788, 69.6932, -6]
+img num: 85 rightLeft, upDown, forwardBack, yaw:
+[-14.012, -9.65995, 68.9487, -7]
+img num: 86 rightLeft, upDown, forwardBack, yaw:
+[-12.558, -10.5664, 68.6472, -7]
+img num: 87 rightLeft, upDown, forwardBack, yaw:
+[-13.1424, -11.3886, 67.5857, -8]
+img num: 88 rightLeft, upDown, forwardBack, yaw:
+[-11.1938, -9.65651, 67.9379, -7]
+img num: 89 rightLeft, upDown, forwardBack, yaw:
+[-10.4625, -9.17564, 67.0616, -7]
+img num: 90 rightLeft, upDown, forwardBack, yaw:
+[-9.28956, -10.8046, 66.3288, -7]
+img num: 91 rightLeft, upDown, forwardBack, yaw:
+[-5.6191, -12.1688, 65.8144, -4]
+img num: 92 rightLeft, upDown, forwardBack, yaw:
+[-8.37476, -7.4881, 65.3524, -8]
+img num: 93 rightLeft, upDown, forwardBack, yaw:
+[-8.36986, -6.44661, 65.309, -8]
+img num: 94 rightLeft, upDown, forwardBack, yaw:
+[-5.50804, -5.05089, 65.0045, -6]
+img num: 95 rightLeft, upDown, forwardBack, yaw:
+[-4.91595, -7.05728, 64.2271, -6]
+img num: 96 rightLeft, upDown, forwardBack, yaw:
+[-0.720313, -7.92783, 64.0539, -4]
+img num: 97 rightLeft, upDown, forwardBack, yaw:
+[-1.68853, -6.82736, 64.115, -5]
+img num: 98 rightLeft, upDown, forwardBack, yaw:
+[1.0784, 1.92643, 64.7724, -4]
+img num: 99 rightLeft, upDown, forwardBack, yaw:
+[0.25034, -7.7081, 64.3424, -5]
+img num: 100 rightLeft, upDown, forwardBack, yaw:
+[-1.32824, -2.34651, 65.0724, -7]
+img num: 101 rightLeft, upDown, forwardBack, yaw:
+[1.39209, -6.84909, 64.6211, -5]
+img num: 102 rightLeft, upDown, forwardBack, yaw:
+[1.83325, -6.13588, 64.7436, -6]
+img num: 103 rightLeft, upDown, forwardBack, yaw:
+[2.06881, -5.77863, 64.802, -6]
+img num: 104 rightLeft, upDown, forwardBack, yaw:
+[-0.964608, 1.51778, 65.707, -8]
+img num: 105 rightLeft, upDown, forwardBack, yaw:
+[1.61827, -9.65723, 65.2984, -6]
+img num: 106 rightLeft, upDown, forwardBack, yaw:
+[2.01681, -12.4904, 64.77, -6]
+img num: 107 rightLeft, upDown, forwardBack, yaw:
+[1.07195, -4.91446, 66.994, -7]
+img num: 108 rightLeft, upDown, forwardBack, yaw:
+[4.22023, -3.39172, 67.3103, -4]
+img num: 109 rightLeft, upDown, forwardBack, yaw:
+[3.63253, -8.28599, 66.9098, -5]
+img num: 110 rightLeft, upDown, forwardBack, yaw:
+[0.766821, -3.94141, 67.4016, -7]
+img num: 111 rightLeft, upDown, forwardBack, yaw:
+[4.36706, -4.88429, 67.0153, -3]
+img num: 112 rightLeft, upDown, forwardBack, yaw:
+[1.15167, -2.73405, 67.5119, -6]
+img num: 113 rightLeft, upDown, forwardBack, yaw:
+[2.67993, 1.10555, 67.4531, -4]
+img num: 114 rightLeft, upDown, forwardBack, yaw:
+[0.0396098, 1.35099, 66.6606, -6]
+img num: 115 rightLeft, upDown, forwardBack, yaw:
+[-0.246687, 1.67584, 66.0306, -6]
+img num: 116 rightLeft, upDown, forwardBack, yaw:
+[1.66474, -1.17381, 65.6202, -3]
+img num: 117 rightLeft, upDown, forwardBack, yaw:
+[-6.58409, -0.544805, 64.9849, -10]
+img num: 118 rightLeft, upDown, forwardBack, yaw:
+[-5.33436, -1.25079, 64.9621, -9]
+img num: 119 rightLeft, upDown, forwardBack, yaw:
+[-1.76412, -0.382029, 65.3303, -6]
+img num: 120 rightLeft, upDown, forwardBack, yaw:
+[-1.91237, 4.64991, 64.9913, -5]
+img num: 121 rightLeft, upDown, forwardBack, yaw:
+[1.93323, 7.06775, 64.2663, -2]
