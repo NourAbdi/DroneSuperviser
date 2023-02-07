@@ -1,14 +1,10 @@
-import time as time
-
 import cv2
-
 from object_3d import *
 from camera import *
 from projection import *
 import pygame as pg
 
 delay = 10000
-Auto = True
 num_frame = 100
 N = 1
 k = 50
@@ -134,26 +130,26 @@ class SoftwareRender:
 
     def run(self):
 
-        if Auto:
-            while True:
+        while True:
 
-                self.draw()
-                self.control_frame()
-                self.camera.control()
-                [exit() for i in pg.event.get() if i.type == pg.QUIT]
+            self.draw()
+            self.control_frame()
+            self.camera.control()
+            [exit() for i in pg.event.get() if i.type == pg.QUIT]
 
-                pg.display.set_caption(
-                    'frame :' + str(self.frame) + ' ,time : ' + str(pg.time.get_ticks() - self.count * k + self.frame_count * delay))
-                pg.display.flip()
-                # self.clock.tick(self.FPS)
-                self.slice_pics()
+            pg.display.set_caption(
+                'frame :' + str(self.frame) + ' ,time : ' + str(
+                    pg.time.get_ticks() - self.count * k + self.frame_count * delay))
+            pg.display.flip()
+            # self.clock.tick(self.FPS)
+            self.slice_pics()
 
-                if pg.time.get_ticks() - self.count * k + self.frame_count * delay > delay * self.frame:
-                    self.frame += 1
-                    self.IMGFlag = False
-                    self.replace_drones()
-                if self.frame > num_frame:
-                    break
+            if pg.time.get_ticks() - self.count * k + self.frame_count * delay > delay * self.frame:
+                self.frame += 1
+                self.IMGFlag = False
+                self.replace_drones()
+            if self.frame > num_frame:
+                break
 
     def control_frame(self):
         key = pg.key.get_pressed()
