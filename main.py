@@ -38,7 +38,6 @@ if __name__ == '__main__':
     # Set the geometry of tkinter frame
     win.geometry("1000x500")
 
-
     def reading_drones(drones_num, frames_num, delay):
         # For each drone we will read the status file containing the translations and the rotations per frame
 
@@ -60,6 +59,8 @@ if __name__ == '__main__':
         app.run()
         cv2.destroyAllWindows()
 
+
+    reading_drones(1, 100, 10000)
 
     def get_value():
         reading_drones(int(entry1.get()), int(entry2.get()), int(entry3.get()))
