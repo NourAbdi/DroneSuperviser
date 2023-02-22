@@ -55,15 +55,16 @@ if __name__ == '__main__':
             droneX.alpha = alpha
             droneX.videoCaps = videoCaps
             drones.append(droneX)
-            win.destroy()
 
+        win.destroy()
         app = SoftwareRender(drones, drones_num, frames_num, delay)
         app.run()
-        # cv2.destroyAllWindows()
+        cv2.destroyAllWindows()
 
 
     # reading_drones(1, 100, 10000)
 
+# Reading the Input from the user : drones ,frames and delay
     def get_value():
         reading_drones(int(entry1.get()), int(entry2.get()), int(entry3.get()))
 
@@ -90,4 +91,3 @@ if __name__ == '__main__':
     button = ttk.Button(win, text="Enter", command=get_value)
     button.grid(row=3, column=1, pady=100)
     win.mainloop()
-

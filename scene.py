@@ -127,9 +127,9 @@ class SoftwareRender:
         if imgs:
             cv2.imshow('imgs', img)
 
-    # This is the main func of this class , once run is running ,it will render the scene and the objects it has
-    # the camera has its own control : keys to use : a,s,d,w,q,e for the position the camera looking at ,arrows for movement
-    # the keys j,k,l is for jumping next previous and wait frames and time elapsed
+    # This is the main func of this class , once run is running ,it will render the scene and the objects it has the
+    # camera has its own control : keys to use : a,s,d,w,q,e for the position the camera looking at ,arrows for
+    # movement the keys j,k,l is for jumping next previous and wait frames and time elapsed
     def run(self):
 
         while True:
