@@ -62,29 +62,29 @@ if __name__ == '__main__':
 
     reading_drones(1, 100, 10000)
 
-    def get_value():
-        reading_drones(int(entry1.get()), int(entry2.get()), int(entry3.get()))
-
-
-    # Create a label 1
-    label1 = Label(win, text='Enter the number of drones: ', fg='black', font=('Arial', 14))
-    label1.grid(row=0, column=0, padx=50, pady=20)
-    # Create an Entry1 Widget
-    entry1 = ttk.Entry(win, font='Century 12', width=40)
-    entry1.grid(row=0, column=1)
-    # Create a label 2
-    label2 = Label(win, text='Enter the number of frames: ', fg='black', font=('Arial', 14))
-    label2.grid(row=1, column=0, padx=50, pady=20)
-    # Create an Entry2 Widget
-    entry2 = ttk.Entry(win, font='Century 12', width=40)
-    entry2.grid(row=1, column=1)
-    # Create a label 3
-    label3 = Label(win, text='Enter the delay in nano sec: ', fg='black', font=('Arial', 14))
-    label3.grid(row=2, column=0, padx=50, pady=20)
-    # Create an Entry3 Widget
-    entry3 = ttk.Entry(win, font='Century 12', width=40)
-    entry3.grid(row=2, column=1)
-    # Create button
-    button = ttk.Button(win, text="Enter", command=get_value)
-    button.grid(row=3, column=1, pady=100)
-    win.mainloop()
+    # def get_value():
+    #     reading_drones(int(entry1.get()), int(entry2.get()), int(entry3.get()))
+    #
+    #
+    # # Create a label 1
+    # label1 = Label(win, text='Enter the number of drones: ', fg='black', font=('Arial', 14))
+    # label1.grid(row=0, column=0, padx=50, pady=20)
+    # # Create an Entry1 Widget
+    # entry1 = ttk.Entry(win, font='Century 12', width=40)
+    # entry1.grid(row=0, column=1)
+    # # Create a label 2
+    # label2 = Label(win, text='Enter the number of frames: ', fg='black', font=('Arial', 14))
+    # label2.grid(row=1, column=0, padx=50, pady=20)
+    # # Create an Entry2 Widget
+    # entry2 = ttk.Entry(win, font='Century 12', width=40)
+    # entry2.grid(row=1, column=1)
+    # # Create a label 3
+    # label3 = Label(win, text='Enter the delay in nano sec: ', fg='black', font=('Arial', 14))
+    # label3.grid(row=2, column=0, padx=50, pady=20)
+    # # Create an Entry3 Widget
+    # entry3 = ttk.Entry(win, font='Century 12', width=40)
+    # entry3.grid(row=2, column=1)
+    # # Create button
+    # button = ttk.Button(win, text="Enter", command=get_value)
+    # button.grid(row=3, column=1, pady=100)
+    # win.mainloop()
