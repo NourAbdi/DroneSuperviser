@@ -27,7 +27,8 @@ def get_drones_from_file(filename, frames_num, drone_name, translations, alpha, 
     # Reading the frame Images (VideoCaps) for each drone
     # for i in range(frames_num):
     #     img = cv2.imread(filename + drone_name + '/video_cap/' + str(i + 1) + '.jpg')
-    #     img = cv2.putText(img, drone_name + ' ,frames_num : ' + str(i+1), coordinates, font, fontScale, color, thickness,
+    #     img = cv2.putText(img, drone_name + ' ,frames_num : ' + str(i + 1), coordinates, font, fontScale, color,
+    #                       thickness,
     #                       cv2.LINE_AA)
     #     videoCaps.append(img)
 
@@ -37,6 +38,7 @@ if __name__ == '__main__':
     win = Tk()
     # Set the geometry of tkinter frame
     win.geometry("1000x500")
+
 
     def reading_drones(drones_num, frames_num, delay):
         # For each drone we will read the status file containing the translations and the rotations per frame
@@ -57,34 +59,35 @@ if __name__ == '__main__':
 
         app = SoftwareRender(drones, drones_num, frames_num, delay)
         app.run()
-        cv2.destroyAllWindows()
+        # cv2.destroyAllWindows()
 
 
-    reading_drones(1, 100, 10000)
+    # reading_drones(1, 100, 10000)
 
-    # def get_value():
-    #     reading_drones(int(entry1.get()), int(entry2.get()), int(entry3.get()))
-    #
-    #
-    # # Create a label 1
-    # label1 = Label(win, text='Enter the number of drones: ', fg='black', font=('Arial', 14))
-    # label1.grid(row=0, column=0, padx=50, pady=20)
-    # # Create an Entry1 Widget
-    # entry1 = ttk.Entry(win, font='Century 12', width=40)
-    # entry1.grid(row=0, column=1)
-    # # Create a label 2
-    # label2 = Label(win, text='Enter the number of frames: ', fg='black', font=('Arial', 14))
-    # label2.grid(row=1, column=0, padx=50, pady=20)
-    # # Create an Entry2 Widget
-    # entry2 = ttk.Entry(win, font='Century 12', width=40)
-    # entry2.grid(row=1, column=1)
-    # # Create a label 3
-    # label3 = Label(win, text='Enter the delay in nano sec: ', fg='black', font=('Arial', 14))
-    # label3.grid(row=2, column=0, padx=50, pady=20)
-    # # Create an Entry3 Widget
-    # entry3 = ttk.Entry(win, font='Century 12', width=40)
-    # entry3.grid(row=2, column=1)
-    # # Create button
-    # button = ttk.Button(win, text="Enter", command=get_value)
-    # button.grid(row=3, column=1, pady=100)
-    # win.mainloop()
+    def get_value():
+        reading_drones(int(entry1.get()), int(entry2.get()), int(entry3.get()))
+
+
+    # Create a label 1
+    label1 = Label(win, text='Enter the number of drones: ', fg='black', font=('Arial', 14))
+    label1.grid(row=0, column=0, padx=50, pady=20)
+    # Create an Entry1 Widget
+    entry1 = ttk.Entry(win, font='Century 12', width=40)
+    entry1.grid(row=0, column=1)
+    # Create a label 2
+    label2 = Label(win, text='Enter the number of frames: ', fg='black', font=('Arial', 14))
+    label2.grid(row=1, column=0, padx=50, pady=20)
+    # Create an Entry2 Widget
+    entry2 = ttk.Entry(win, font='Century 12', width=40)
+    entry2.grid(row=1, column=1)
+    # Create a label 3
+    label3 = Label(win, text='Enter the delay in nano sec: ', fg='black', font=('Arial', 14))
+    label3.grid(row=2, column=0, padx=50, pady=20)
+    # Create an Entry3 Widget
+    entry3 = ttk.Entry(win, font='Century 12', width=40)
+    entry3.grid(row=2, column=1)
+    # Create button
+    button = ttk.Button(win, text="Enter", command=get_value)
+    button.grid(row=3, column=1, pady=100)
+    win.mainloop()
+
